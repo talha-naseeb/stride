@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Stride",
+    "slug": "stride",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0f1117"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stride.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Stride uses your location to track your activities.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Stride uses your location to track activities."
+      }
+    },
+    "android": {
+      "package": "com.stride.app",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      ["expo-location", { "locationAlwaysAndWhenInUsePermission": "Stride needs location to track your workouts." }]
+    ],
+    "extra": {
+      "supabaseUrl": "YOUR_SUPABASE_URL",
+      "supabaseAnonKey": "YOUR_SUPABASE_ANON_KEY"
+    }
+  }
+}
